@@ -1,0 +1,39 @@
+.header-navbar
+{
+    letter-spacing: .1em;
+    &-btn
+    {
+        display: none;
+    }
+    &__list
+    {
+        display: grid;
+
+        margin: 0 -10px 0 0;
+        padding: 0;
+
+        list-style-type: none;
+
+        justify-content: end;
+        grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+        gap: 20px;
+    }
+    // &__item {
+    // }
+    &__link
+    {
+        font-size: 1.125rem;
+
+        display: block;
+
+        padding: 20px 10px;
+
+        transition: color .25s;
+
+        &:hover,
+        &:focus
+        {
+            color: #d66926;
+        }
+    }
+}

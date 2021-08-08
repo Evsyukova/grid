@@ -1,0 +1,16 @@
+.header
+{
+    position: relative;
+
+    display: grid;
+
+    min-height: 100vh;
+
+    color: #fff;
+    background-color: #2d3651;
+    background-image: url(../img/img-header.png);
+    background-position: center;
+    background-size: cover;
+
+    align-content: center;
+}

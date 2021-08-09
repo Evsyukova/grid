@@ -1,16 +1,16 @@
-.header
-{
-    position: relative;
+@use "../../presets" as *;
+.header {
+  position: relative;
 
-    display: grid;
+  display: grid;
 
-    min-height: 100vh;
+  min-height: 100vh;
 
-    color: #fff;
-    background-color: #2d3651;
-    background-image: url(../img/img-header.png);
-    background-position: center;
-    background-size: cover;
+  color: $color-light;
+  background-color: $color-primary;
+  background-image: url(../img/img-header.png);
+  background-position: center;
+  background-size: cover;
 
-    align-content: center;
+  align-content: center;
 }

@@ -1,18 +1,15 @@
-@use '../../mixins';
-.header-content
-{
-    position: relative;
-    z-index: 1;
+@use '../../mixins' as *;
+.header-content {
+  position: relative;
+  z-index: 1;
 
-    &__actions
-    {
-        display: flex;
+  &__actions {
+    display: flex;
 
-        justify-content: center;
-        gap: 20px;
-    }
-    &_container
-    {
-        @extend %container;
-    }
+    justify-content: center;
+    gap: 20px;
+  }
+  &_container {
+    @extend %container;
+  }
 }

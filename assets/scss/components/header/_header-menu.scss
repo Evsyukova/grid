@@ -1,19 +1,17 @@
-@use '../../mixins';
-.header-menu
-{
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    right: 0;
-    left: 0;
+@use '../../mixins' as *;
+.header-menu {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  left: 0;
 
-    &__container
-    {
-        display: grid;
+  &__container {
+    display: grid;
 
-        gap: 20px;
-        grid-template-columns: auto 1fr;
-        align-items: center;
-        @extend %container;
-    }
+    gap: 20px;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    @extend %container;
+  }
 }

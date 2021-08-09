@@ -1,9 +1,9 @@
-.header-overlay
-{
-    position: absolute;
+@use '../../presets' as*;
+.header-overlay {
+  position: absolute;
 
-    opacity: .8;
-    background-color: #2d3651;
+  opacity: 0.8;
+  background-color: $color-primary;
 
-    inset: 0;
+  inset: 0;
 }

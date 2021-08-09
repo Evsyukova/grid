@@ -1,33 +1,30 @@
+@use '../presets' as *;
 *,
 *::before,
-*::after
-{
-    box-sizing: border-box;
+*::after {
+  box-sizing: border-box;
 }
 
-html
-{
-    font-family: 'Roboto', sans-serif;
+html {
+  font-family: "Roboto", sans-serif;
 
-    overflow-y: scroll;
+  overflow-y: scroll;
 
-    color: #637588;
+  color: $color-gray;
 }
 
-h1
-{
-    font-family: 'Roboto Slab', serif;
-    font-size: 3.75rem;
-    font-weight: 300;
-    line-height: 1.2em;
+h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 3.75rem;
+  font-weight: 300;
+  line-height: 1.2em;
 
-    text-align: center;
-    letter-spacing: .08em;
+  text-align: center;
+  letter-spacing: 0.08em;
 }
 
-a
-{
-    text-decoration: none;
+a {
+  text-decoration: none;
 
-    color: #fff;
+  color: $color-light;
 }

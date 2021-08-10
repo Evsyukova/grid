@@ -1,15 +1,48 @@
-.skills
-{
-    &__container
-    {
-        display: grid;
+@use '../../../presets' as *;
+@use '../../../mixins' as *;
+.skills {
+  @include sm-min {
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+  @include sm {
+    padding: $gap;
+  }
 
-        margin-bottom: 20px;
-    }
-    &__actions
-    {
-        display: flex;
+  &__container {
+    display: grid;
 
-        justify-content: center;
+    margin-bottom: $gap;
+    @include lg-min {
+      grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
     }
+    @include lg-md {
+      grid-template-areas: "a1 a1 a2" "a3 a4 a4" "a5 a5 a6" "a7 a8 a6" "a7 a9 a9";
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    @include md-sm {
+      grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    @include sm {
+      grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
+      grid-template-columns: 1fr;
+      gap: $gap;
+    }
+
+    @media (min-height: 691px) {
+      grid-auto-rows: calc(33.3333vh - 13.3333px);
+    }
+    @media (max-height: 690px) {
+      grid-auto-rows: calc(230px - 13.3333px);
+    }
+  }
+  &__actions {
+    display: flex;
+    justify-content: center;
+  }
 }

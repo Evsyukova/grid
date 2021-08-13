@@ -16,16 +16,13 @@
     }
   }
   &__title {
-    font-size: 1.25rem;
+    @include abs-position;
+    // font-size: 1.25rem;
 
-    position: absolute;
     z-index: 1;
 
     margin: 0;
-
-    letter-spacing: 2px;
-
-    inset: 0;
+    letter-spacing: 0.1em;
   }
   &__link {
     display: flex;
@@ -38,16 +35,18 @@
 
     @include md-min {
       font-size: 1.25rem;
+      letter-spacing: 0.1em;
     }
     @include md {
       font-size: 1.125rem;
+      letter-spacing: 0.1em;
     }
 
     justify-content: center;
     align-items: center;
   }
   &__image {
-    position: absolute;
+    @include abs-position;
 
     transition: transform 0.5s;
 
@@ -55,18 +54,14 @@
     background-image: url(../img/img-html@2x.png);
     background-position: center;
     background-size: cover;
-
-    inset: 0;
   }
   &__overlay {
-    position: absolute;
+    @include abs-position;
 
     transition: background-color 0.5s;
 
     opacity: 0.8;
     background-color: $color-primary;
-
-    inset: 0;
   }
 }
 

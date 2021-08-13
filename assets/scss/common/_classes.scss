@@ -31,6 +31,8 @@
   @include md {
     min-width: 170px;
     height: 40px;
+    letter-spacing: 0.05em;
+    font-size: 1rem;
   }
   border: 2px solid $color-light;
   background-color: rgba($color-light, 0.1);
@@ -45,6 +47,7 @@
   @include sm {
     width: 100%;
   }
+
   border: 2px solid $color-primary;
   background-color: rgba($color-primary, 0.8);
 }

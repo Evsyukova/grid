@@ -19,6 +19,7 @@
     @extend %container;
   }
   &__title {
+    text-align: center;
     @include lg-min {
       margin: 0 0 53px;
     }

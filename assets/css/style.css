@@ -589,17 +589,6 @@ input:focus {
   display: grid;
   margin-bottom: 20px;
 }
-.skills__actions {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .skill-item {
   position: relative;
   overflow: hidden;
@@ -960,7 +949,7 @@ input:focus {
   font-weight: 700;
 }
 @media (min-width: 576px) {
-  .posts__actions {
+  .posts__actions, .skills__actions {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -970,10 +959,7 @@ input:focus {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .posts__actions .btn--primary {
-    min-width: 350px;
-  }
-  .btn--primary {
+  .posts__actions .btn--primary, .skills__actions .btn--primary {
     min-width: 350px;
   }
   .skills {
@@ -1170,16 +1156,13 @@ input:focus {
   }
 }
 @media (max-width: 575.8px) {
-  .posts__actions .btn--primary {
+  .posts__actions .btn--primary, .skills__actions .btn--primary {
     width: 100%;
   }
   h2 {
     margin-bottom: 2.25rem;
     text-align: center;
     font-size: 1.5rem;
-  }
-  .btn--primary {
-    width: 100%;
   }
   .header-content__actions {
     -webkit-box-orient: vertical;
